@@ -22,4 +22,15 @@ public class ItemRepositoryImpl implements ItemRepository {
                         , ItemEntity.class);
         return items.getResultList();
     }
+
+    @Override
+    public void addItem(ItemEntity item) {
+
+    }
+
+    @Override
+    public Long findItemByName(String name) {
+        Long o = null;
+        return o;
+    }
 }
