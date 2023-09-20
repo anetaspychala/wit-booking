@@ -1,5 +1,4 @@
 package pl.sdacademy.booking.service;
-
 import lombok.extern.slf4j.Slf4j;
 import pl.sdacademy.booking.data.EventEntity;
 import pl.sdacademy.booking.model.EventDto;
@@ -10,6 +9,7 @@ import java.util.List;
 
 @Slf4j
 public class EventService {
+
 
     private final EventRepository eventRepository;
 
@@ -50,3 +50,4 @@ public class EventService {
 
 
 }
+

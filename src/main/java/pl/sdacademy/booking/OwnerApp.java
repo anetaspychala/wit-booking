@@ -13,10 +13,13 @@ public class OwnerApp {
         System.out.println("1: - pokaz katalog produktow");
         System.out.println("2: - pokaz terminarz sesji");
 
+
         Scanner scanner = new Scanner(System.in);
         int inputValue = scanner.nextInt();
         if (inputValue == 1) {
-            new ItemController().presentCatalog();
+           // new ItemController(itemService, eventService).presentCatalog();
+        } else if (inputValue == 2) {
+            //new ItemController(itemService, eventService).presentEvents();
         }
         if (inputValue == 2) {
             new EventController().presentEventSchedule();

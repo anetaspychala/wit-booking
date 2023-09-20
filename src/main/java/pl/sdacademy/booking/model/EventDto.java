@@ -1,10 +1,8 @@
 package pl.sdacademy.booking.model;
-
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
