@@ -1,7 +1,7 @@
 package pl.sdacademy.booking;
 
+import pl.sdacademy.booking.controller.EventController;
 import pl.sdacademy.booking.controller.ItemController;
-
 import java.util.Scanner;
 
 public class OwnerApp {
@@ -10,8 +10,9 @@ public class OwnerApp {
 
         System.out.println("Witam w salonie XXX");
         System.out.println("Menu:");
-        System.out.println("1: - pokaz katalog");
-        System.out.println("2: - pokaz wydarzenia");
+        System.out.println("1: - pokaz katalog produktow");
+        System.out.println("2: - pokaz terminarz sesji");
+
 
         Scanner scanner = new Scanner(System.in);
         int inputValue = scanner.nextInt();
@@ -20,6 +21,11 @@ public class OwnerApp {
         } else if (inputValue == 2) {
             //new ItemController(itemService, eventService).presentEvents();
         }
+        if (inputValue == 2) {
+            new EventController().presentEventSchedule();
+        }
+
 
     }
+
 }
